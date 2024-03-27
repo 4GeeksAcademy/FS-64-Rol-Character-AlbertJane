@@ -3,26 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Creating a D&D Character</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-slate-900">
+    <div class="container flex justify-center">
+      <div
+        class="bg-white  shadow-sm shadow-slate-950 w-1/2 text-center mt-12 p-5 rounded"
+      >
+        <div class="title p-2 text-black flex justify-between border-b">
+          <span>Character Name: </span><span id="cName"></span>
+        </div>
+
+        <div
+          class="abilities p-2 text-black flex justify-between items-center border-b"
+        >
+          <span>Intelligence: </span
+          ><span
+            id="intelligence"
+            class="px-4 py-2 bg-blue-700 text-white rounded-xl"
+          ></span>
+        </div>
+        <div
+          class="abilities p-2 text-black flex justify-between items-center border-b"
+        >
+          <span>Wisdom: </span
+          ><span
+            id="wisdom"
+            class="px-4 py-2 bg-sky-500 text-white rounded-xl"
+          ></span>
+        </div>
+        <div
+          class="abilities p-2 text-black flex justify-between items-center border-b"
+        >
+          <span>Dexterity: </span
+          ><span
+            id="dexterity"
+            class="px-4 py-2 bg-orange-500 text-white rounded-xl"
+          ></span>
+        </div>
+        <div
+          class="abilities p-2 text-black flex justify-between items-center border-b"
+        >
+          <span>Strenght: </span
+          ><span
+            id="strength"
+            class="px-4 py-2 bg-red-500 text-white rounded-xl"
+          ></span>
+        </div>
+        <div
+          class="abilities p-2 text-black flex justify-between items-center border-b"
+        >
+          <span>Constitution: </span
+          ><span
+            id="constitution"
+            class="px-4 py-2 bg-green-600 text-white rounded-xl"
+          ></span>
+        </div>
+        <div
+          class="abilities p-2 text-black flex justify-between items-center border-b"
+        >
+          <span>Charisma: </span
+          ><span
+            id="charisma"
+            class="px-4 py-2 bg-purple-600 text-white rounded-xl"
+          ></span>
+        </div>
+        <div class="buttons flex justify-evenly g-3 items-center mt-5">
+          <button id="mage" class=" px-5 py-2 bg-blue-700 rounded-full">
+            Mage
+          </button>
+          <button id="warrior" class=" px-5 py-2 bg-red-700 rounded-full">
+            Warrior</button
+          ><button id="rogue" class=" px-5 py-2 bg-orange-500  rounded-full">
+            Rogue</button
+          ><button id="bard" class=" px-5 py-2 bg-purple-600  rounded-full">
+            Bard
+          </button>
+        </div>
       </div>
     </div>
   </body>
